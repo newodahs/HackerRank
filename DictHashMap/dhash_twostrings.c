@@ -20,10 +20,7 @@ char* twoStrings(char* s1, char* s2)
   //since I don't care to process the string(s) too much, just account for
   //the characters between upper and lowercase on the ASCII chart (though
   //they'll never actually be seen in our test data...)
-  int aiChk[58] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                   0, 0, 0, 0};
+  int aiChk[58] = { 0 };
  
   for (int i = 0; s1[i] != '\0'; i++) {
     int iAPos = s1[i] - 65;
